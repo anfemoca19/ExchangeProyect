@@ -1,7 +1,10 @@
+@import "./_variables.scss";
+
+
 body {
-  background: linear-gradient(to right, #482b41, #06030a);
+  background: $colorBody;
   /* (#482b41, #06030a); */
-  color: #cdc4c8;
+  color: $colorTextNav;
   font-family: "Inter", sans-serif;
   font-family: "Victor Mono", monospace;
 }
@@ -10,37 +13,36 @@ body {
   height: 100px;
   text-align: center;
 }
-
 .container-styles {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 20px;
+  font-size: $fontSizeNav;
 }
 
 a {
   text-decoration: none;
-  color: #cdc4c8;
+  color: $colorTextNav;
 }
 
 a:hover {
-  background-color: rgba(184, 45, 43, 0.2);
+  background-color: rgb(#b82d2b, 0.2);
   border-radius: 5px;
   padding: 5px;
-  color: #cdc4c8;
+  color: $colorTextNav;
 }
 
 .button-contact {
-  background: linear-gradient(to right, #482b41, #a536b6);
+  background: $gradient-button;
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
   height: 40px;
-  width: 100px;
-  font-size: 15px;
+  width: 160px;
+  font-size: $fontSizeButton;
 }
 
 .button-contcat:focus {
   border: 1px solid #b82d2b;
-}/*# sourceMappingURL=style.css.map */
+}
