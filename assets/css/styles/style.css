@@ -2,8 +2,7 @@ body {
   background: linear-gradient(to right, #482b41, #06030a);
   /* (#482b41, #06030a); */
   color: #cdc4c8;
-  font-family: "Inter", sans-serif;
-  font-family: "Victor Mono", monospace;
+  font-family: "Playfair Display", serif;
 }
 
 .container-header {
@@ -17,6 +16,7 @@ body {
   align-items: center;
   gap: 20px;
   font-size: 20px;
+  font-family: "Victor Mono", monospace;
 }
 
 a {
@@ -41,6 +41,14 @@ a:hover {
   font-size: 15px;
 }
 
-.button-contcat:focus {
+.button-style:focus {
   border: 1px solid #b82d2b;
+}
+
+.nftHome {
+  width: 500px;
+  height: 500px;
+}
+.nftHome img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

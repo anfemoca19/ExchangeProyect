@@ -5,20 +5,21 @@ body {
   background: $colorBody;
   /* (#482b41, #06030a); */
   color: $colorTextNav;
-  font-family: "Inter", sans-serif;
-  font-family: "Victor Mono", monospace;
+  font-family: 'Playfair Display', serif;
 }
 
 .container-header {
   height: 100px;
   text-align: center;
 }
+
 .container-styles {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   font-size: $fontSizeNav;
+  font-family: "Victor Mono", monospace;
 }
 
 a {
@@ -43,6 +44,15 @@ a:hover {
   font-size: $fontSizeButton;
 }
 
-.button-contcat:focus {
+.button-style:focus {
   border: 1px solid #b82d2b;
+}
+
+
+.nftHome{
+  width: $sizeNftWidth;
+  height: $sizeNftheith;
+  img{
+    width: 100%;
+  }
 }
