@@ -8,33 +8,7 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.container-header {
-  height: 100px;
-  text-align: center;
-}
-
-.container-styles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: $fontSizeNav;
-  font-family: "Victor Mono", monospace;
-}
-
-a {
-  text-decoration: none;
-  color: $colorTextNav;
-}
-
-a:hover {
-  background-color: rgb(#b82d2b, 0.2);
-  border-radius: 5px;
-  padding: 5px;
-  color: $colorTextNav;
-}
-
-.button-style {
+@mixin button{
   background: $gradientButton;
   border-radius: 5px;
   border: 1px solid #cdc4c8;
@@ -42,17 +16,80 @@ a:hover {
   height: 40px;
   width: 160px;
   font-size: $fontSizeButton;
+  cursor: pointer;
+  :focus{
+    border: 1px solid #b82d2b;
+  }
 }
 
-.button-style:focus {
-  border: 1px solid #b82d2b;
+header {
+
+  text-align: center;
+
+  .container-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: $fontSizeNav;
+    font-family: "Victor Mono", monospace;
+  } 
+
+  a{
+    text-decoration: none;
+    color: $colorTextNav;
+    padding: 5px;
+  }
+
+  a:hover{
+    background-color: $hoverA;
+    border-radius: 5px;
+    padding: 5px;
+    color: $colorTextNav;
+  }
+  img{
+    height: 200px
+  }
+  button{
+    @include button;
+  }
+
 }
 
-.title-footer{
-  font-weight: $footerTitle;
+
+fieldset{
+  span{
+    color:$colorAsterisks
+  }
+
+  button{
+    @include button;
+  }
+
+  button:focus{
+    border: 1px solid #b82d2b;
+  }
 }
 
-.asterisks{
-  color:$colorAsterisks
+
+footer{
+
+  h5{
+    font-weight:$footerTitle;
+  }
+
+  li{
+    color:$colorTextNav
+    a{
+      text-decoration: none;
+      color:$colorTextNav
+    }
+  }
+  img{
+    height: 100px;
+  }
 }
+
+
+
 

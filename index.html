@@ -14,7 +14,11 @@
 <body>
   <div class="container-fluid">
     <header class="row text-center container-header">
-      <div class="col-sm-4 text-center container-styles">Logo</div>
+      <div class="col-sm-4 text-center container-styles">        
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="./assets/img/logo2.png" alt="loco">
+        </a>
+      </div>
       <div class="col-sm-4 container-styles ">
         <a href="">Market</a>
         <a href="">Features</a>
@@ -25,29 +29,40 @@
       </div>
     </header>
     <main class="mt-5">
-      <section class="row featurette">
+      <section class="row featurette p-5">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">Opere con criptomonedas y NFT con confianza</h2>
           <p class="lead">Compre,vende y explore tokens y NFT</p>
-          <button type="" class="button-style ">Empezar</button>
+          <button type="button" class="button-style " >Empezar</button>
         </div>
         <div class="col-md-5 nftHome">
-          <img  src="./assets/img/nftHome.jpg" alt="nftHome">
+          <img  src="./assets/img/nftHome.jpg" alt="nftHome" id="animated-img">
         </div>
+      </section>
+      <section class="row p-5">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/Logo.png" class="card-img-top img-card" alt="">
+            <div class="card-body">
+              <h5 class="card-title">CyberDroids Gallery</h5>
+              <div class="row">
+                <span class="card-text col-6">1.5 ETH</p>
+                <a href="#" class="col-6">😍</a>
+              </div>
+            </div>
+          </div>
       </section>
     </main>
       <div class="container">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <a href="/index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="./assets/img/logo2.png" alt="loco">
             </a>
             <p class="text-body-secondary">&copy; 2023</p>
           </div>
-      
-          <div class="col mb-3">
+          <div class="col mb-3 text-center">
             <h5>App</h5>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column  ">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Swap</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tokens</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Nefts</a></li>
@@ -55,32 +70,32 @@
             </ul>
           </div>
       
-          <div class="col mb-3">
+          <div class="col mb-3 text-center">
             <h5>Protocol</h5>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column ">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Community</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gobernance</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Developers</a></li>
             </ul>
           </div>
-      
-          <div class="col mb-3">
+          <div class="col mb-3 text-center">
             <h5>Company</h5>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column ">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
             </ul>
           </div>
       
-          <div class="col mb-3">
+          <div class="col mb-3 text-center">
             <h5>Get Help</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help Center</a></li>
             </ul>
           </div>
         </footer>
       </div>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

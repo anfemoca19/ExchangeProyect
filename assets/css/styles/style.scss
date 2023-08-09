@@ -8,33 +8,7 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.container-header {
-  height: 100px;
-  text-align: center;
-}
-
-.container-styles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: $fontSizeNav;
-  font-family: "Victor Mono", monospace;
-}
-
-a {
-  text-decoration: none;
-  color: $colorTextNav;
-}
-
-a:hover {
-  background-color: rgb(#b82d2b, 0.2);
-  border-radius: 5px;
-  padding: 5px;
-  color: $colorTextNav;
-}
-
-.button-style {
+@mixin button{
   background: $gradientButton;
   border-radius: 5px;
   border: 1px solid #cdc4c8;
@@ -42,20 +16,99 @@ a:hover {
   height: 40px;
   width: 160px;
   font-size: $fontSizeButton;
-}
-
-.button-style:focus {
-  border: 1px solid #b82d2b;
-}
-
-
-.nftHome{
-  width: $sizeNftWidth;
-  height: $sizeNftheith;
-  img{
-    width: 100%;
+  cursor: pointer;
+  :focus{
+    border: 1px solid #b82d2b;
   }
 }
-.title-footer{
-  font-weight: $footerTitle;
+
+header {
+  text-align: center;
+
+  .container-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: $fontSizeNav;
+    font-family: "Victor Mono", monospace;
+  } 
+
+  a{
+    text-decoration: none;
+    color: $colorTextNav;
+    padding: 5px;
+  }
+
+  a:hover{
+    background-color: $hoverA;
+    border-radius: 5px;
+    padding: 5px;
+    color: $colorTextNav;
+  }
+  img{
+    height: 200px
+  }
+  button{
+    @include button;
+  }
+
+}
+
+
+main{
+  .nftHome{
+    width: $sizeNftWidth;
+    height: $sizeNftheith;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button{
+    @include button();
+  }
+
+  img{
+    width: 100%;
+    border-radius: 10px;
+    animation: rotar 5s linear infinite;
+    filter: drop-shadow(0px 7px 21px $hoverA);
+  }
+  .card{
+    background-color: $backgroundCard;
+  }
+  
+  .img-card{
+    height: 300px;
+  }
+}
+
+
+footer{
+
+  h5{
+    font-weight:$footerTitle;
+  }
+
+  li{
+    color:$colorTextNav
+    a{
+      text-decoration: none;
+      color:$colorTextNav
+    }
+  }
+  img{
+    height: 100px;
+  }
+}
+
+
+@keyframes rotar{
+  from{
+    transform: rotateY(180deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
 }

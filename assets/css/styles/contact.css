@@ -5,12 +5,10 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.container-header {
-  height: 100px;
+header {
   text-align: center;
 }
-
-.container-styles {
+header .container-styles {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,38 +16,62 @@ body {
   font-size: 20px;
   font-family: "Victor Mono", monospace;
 }
-
-a {
+header a {
   text-decoration: none;
   color: #cdc4c8;
+  padding: 5px;
 }
-
-a:hover {
+header a:hover {
   background-color: rgba(184, 45, 43, 0.2);
   border-radius: 5px;
   padding: 5px;
   color: #cdc4c8;
 }
-
-.button-style {
+header img {
+  height: 200px;
+}
+header button {
   background: linear-gradient(to right, #482b41, #a536b6);
-  cursor: pointer;
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
   height: 40px;
   width: 160px;
   font-size: 15px;
+  cursor: pointer;
 }
-
-.button-style:focus {
+header button :focus {
   border: 1px solid #b82d2b;
 }
 
-.title-footer {
-  font-weight: 600px;
+fieldset span {
+  color: #B82D2B;
+}
+fieldset button {
+  background: linear-gradient(to right, #482b41, #a536b6);
+  border-radius: 5px;
+  border: 1px solid #cdc4c8;
+  color: #cdc4c8;
+  height: 40px;
+  width: 160px;
+  font-size: 15px;
+  cursor: pointer;
+}
+fieldset button :focus {
+  border: 1px solid #b82d2b;
+}
+fieldset button:focus {
+  border: 1px solid #b82d2b;
 }
 
-.asterisks {
-  color: #b82d2b;
-} /*# sourceMappingURL=contact.css.map */
+footer h5 {
+  font-weight: 600;
+}
+footer li {
+  color: #cdc4c8 a;
+  color-text-decoration: none;
+  color-color: #cdc4c8;
+}
+footer img {
+  height: 100px;
+}/*# sourceMappingURL=contact.css.map */
