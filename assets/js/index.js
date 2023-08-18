@@ -20,3 +20,13 @@ let likeClicked= () => {
     isLiked = true;
   }
 };
+
+
+
+// BtnEmpezar
+
+document.getElementById("ready").addEventListener("click", function() {
+  window.location.href = "market.html";
+});
+
+

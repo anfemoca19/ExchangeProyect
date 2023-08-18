@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+body {
+  background: $colorBody;
+  /* (#482b41, #06030a); */
+  color: $colorTextNav;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+  h5{
+    font-weight:$footerTitle;
+  }
+
+  li{
+    color:$colorTextNav
+    a{
+      text-decoration: none;
+      color:$colorTextNav
+    }
+  }
+  img{
+    height: 100px;
+  }
+}

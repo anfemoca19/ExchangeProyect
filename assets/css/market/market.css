@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(to right, #482b41, #06030a);
+  /* (#482b41, #06030a); */
+  color: #cdc4c8;
+  font-family: "Playfair Display", serif;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+footer li {
+  color: #cdc4c8 a;
+  color-text-decoration: none;
+  color-color: #cdc4c8;
+}
+footer img {
+  height: 100px;
+}/*# sourceMappingURL=market.css.map */
