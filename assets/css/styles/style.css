@@ -50,8 +50,32 @@ main .nftHome {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  perspective: 500px;
 }
-main button {
+main .animated-img {
+  width: 100%;
+  border-radius: 10px;
+  animation: rotar 10s linear infinite;
+  filter: drop-shadow(0px 7px 21px rgba(184, 45, 43, 0.2));
+}
+main .card {
+  background-color: #fff;
+  width: 18rem;
+}
+main .card .img-card {
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px;
+}
+main .card .heartIcon {
+  height: 20px;
+}
+main .card .like {
+  background-color: #fff;
+  border: none;
+}
+main .buyNow {
   background: linear-gradient(to right, #482b41, #a536b6);
   border-radius: 5px;
   border: 1px solid #cdc4c8;
@@ -61,22 +85,24 @@ main button {
   font-size: 15px;
   cursor: pointer;
 }
-main button :focus {
+main .buyNow :focus {
   border: 1px solid #b82d2b;
 }
-main img {
-  width: 100%;
-  border-radius: 10px;
-  animation: rotar 5s linear infinite;
-  filter: drop-shadow(0px 7px 21px rgba(184, 45, 43, 0.2));
-}
-main .card {
-  background-color: #fff;
-}
-main .img-card {
-  height: 300px;
-}
 
+@keyframes rotar {
+  from {
+    width: 30rem;
+    height: 30rem;
+  }
+  50% {
+    width: 20rem;
+    height: 20rem;
+  }
+  to {
+    width: 25rem;
+    height: 25rem;
+  }
+}
 footer h5 {
   font-weight: 600;
 }
@@ -87,13 +113,4 @@ footer li {
 }
 footer img {
   height: 100px;
-}
-
-@keyframes rotar {
-  from {
-    transform: rotateY(180deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
 }/*# sourceMappingURL=style.css.map */

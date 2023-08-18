@@ -63,24 +63,57 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    perspective: 500px;
   }
 
-  button{
+
+
+  .animated-img{
+    width: 100%;
+    border-radius: 10px;
+    animation: rotar 10s linear infinite;
+    filter: drop-shadow(0px 7px 21px $hoverA);
+  }
+
+
+
+  .card{
+    background-color: $backgroundCard;
+    width: 18rem;
+
+    .img-card{
+      height: 250px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .heartIcon{
+      height: 20px;
+    }
+    .like{
+      background-color: $backgroundCard;
+      border:none
+    }
+  }
+
+  .buyNow{
     @include button();
   }
 
-  img{
-    width: 100%;
-    border-radius: 10px;
-    animation: rotar 5s linear infinite;
-    filter: drop-shadow(0px 7px 21px $hoverA);
+}
+
+@keyframes rotar{
+    from{
+      width: 30rem;
+      height: 30rem;
   }
-  .card{
-    background-color: $backgroundCard;
+  50%{
+      width: 20rem;
+      height: 20rem;
   }
-  
-  .img-card{
-    height: 300px;
+  to{
+      width: 25rem;
+      height: 25rem;
   }
 }
 
@@ -104,11 +137,3 @@ footer{
 }
 
 
-@keyframes rotar{
-  from{
-    transform: rotateY(180deg);
-  }
-  to{
-    transform: rotateY(360deg);
-  }
-}

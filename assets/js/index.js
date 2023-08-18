@@ -1,11 +1,22 @@
-const animatedImage = document.getElementById("animated-image");
 
-let rotation = 0; // Ángulo de rotación inicial
 
-function rotateImage() {
-  rotation += 10; // Incrementa el ángulo de rotación en grados
-  animatedImage.style.transform = `rotate(${rotation}deg)`; // Aplica la transformación
-}
+// Contador de me gusta
+ let likeCount= 0 
+  let isLiked = false
 
-// Inicia la animación utilizando setInterval
-setInterval(rotateImage, 1); // Cambia la imagen cada 100 milisegundos (10 FPS)
+// DOM 
+const likeButton = document.getElementById("likeButton")
+const likeCountElement = document.getElementById("likeCount");
+const likeIcon =  document.getElementById("likeImg");
+
+
+// clic
+let likeClicked= () => {
+  debugger
+  if (!isLiked) {
+    likeCount++;
+    likeCountElement.textContent = `${likeCount} `;
+    likeIcon.src = './assets/img/heart.svg'; // Cambia la imagen a corazón lleno
+    isLiked = true;
+  }
+};
