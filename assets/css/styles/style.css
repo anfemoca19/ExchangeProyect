@@ -59,6 +59,19 @@ main .animated-img {
   animation: rotar 10s linear infinite;
   filter: drop-shadow(0px 7px 21px rgba(184, 45, 43, 0.2));
 }
+main .button-style {
+  background: linear-gradient(to right, #482b41, #a536b6);
+  border-radius: 5px;
+  border: 1px solid #cdc4c8;
+  color: #cdc4c8;
+  height: 40px;
+  width: 160px;
+  font-size: 15px;
+  cursor: pointer;
+}
+main .button-style :focus {
+  border: 1px solid #b82d2b;
+}
 main .card {
   background-color: #fff;
   width: 18rem;
@@ -74,6 +87,9 @@ main .card .heartIcon {
 main .card .like {
   background-color: #fff;
   border: none;
+}
+main .titleColection {
+  font-size: 25px;
 }
 main .buyNow {
   background: linear-gradient(to right, #482b41, #a536b6);

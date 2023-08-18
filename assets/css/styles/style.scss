@@ -76,7 +76,9 @@ main{
     filter: drop-shadow(0px 7px 21px $hoverA);
   }
 
-
+  .button-style {
+    @include button;
+  }
 
   .card{
     background-color: $backgroundCard;
@@ -87,15 +89,19 @@ main{
       border-radius: 10px;
       padding: 10px;
     }
+
     .heartIcon{
       height: 20px;
     }
+
     .like{
       background-color: $backgroundCard;
       border:none
     }
   }
-
+  .titleColection{
+    font-size: 25px
+  }
   .buyNow{
     @include button();
   }
