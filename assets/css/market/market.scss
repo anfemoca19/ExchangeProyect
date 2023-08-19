@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../variables.scss";
 
 body {
   background: $colorBody;
@@ -6,8 +6,52 @@ body {
   color: $colorTextNav;
   font-family: 'Playfair Display', serif;
 }
+@mixin button{
+  background: $gradientButton;
+  border-radius: 5px;
+  border: 1px solid #cdc4c8;
+  color: #cdc4c8;
+  height: 40px;
+  width: 160px;
+  font-size: $fontSizeButton;
+  cursor: pointer;
+  :focus{
+    border: 1px solid #b82d2b;
+  }
+}
 
+header {
+  text-align: center;
 
+  .container-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: $fontSizeNav;
+    font-family: "Victor Mono", monospace;
+  } 
+
+  a{
+    text-decoration: none;
+    color: $colorTextNav;
+    padding: 5px;
+  }
+
+  a:hover{
+    background-color: $hoverA;
+    border-radius: 5px;
+    padding: 5px;
+    color: $colorTextNav;
+  }
+  img{
+    height: 200px
+  }
+  button{
+    @include button;
+  }
+
+}
 
 
 

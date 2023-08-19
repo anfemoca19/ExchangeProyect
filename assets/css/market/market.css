@@ -5,6 +5,45 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+header {
+  text-align: center;
+}
+header .container-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-family: "Victor Mono", monospace;
+}
+header a {
+  text-decoration: none;
+  color: #cdc4c8;
+  padding: 5px;
+}
+header a:hover {
+  background-color: rgba(184, 45, 43, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  color: #cdc4c8;
+}
+header img {
+  height: 200px;
+}
+header button {
+  background: linear-gradient(to right, #482b41, #a536b6);
+  border-radius: 5px;
+  border: 1px solid #cdc4c8;
+  color: #cdc4c8;
+  height: 40px;
+  width: 160px;
+  font-size: 15px;
+  cursor: pointer;
+}
+header button :focus {
+  border: 1px solid #b82d2b;
+}
+
 footer h5 {
   font-weight: 600;
 }
