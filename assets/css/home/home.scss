@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../variables.scss";
 
 
 body {
@@ -67,7 +67,9 @@ main{
     perspective: 500px;
   }
 
-
+  .titleOpere{
+    font-size: 50px;
+  }
 
   .animated-img{
     width: 100%;
@@ -100,7 +102,7 @@ main{
     }
   }
   .titleColection{
-    font-size: 25px
+    font-size: 35px
   }
   .buyNow{
     @include button();

@@ -53,6 +53,9 @@ main .nftHome {
   flex-direction: column;
   perspective: 500px;
 }
+main .titleOpere {
+  font-size: 50px;
+}
 main .animated-img {
   width: 100%;
   border-radius: 10px;
@@ -89,7 +92,7 @@ main .card .like {
   border: none;
 }
 main .titleColection {
-  font-size: 25px;
+  font-size: 35px;
 }
 main .buyNow {
   background: linear-gradient(to right, #482b41, #a536b6);
