@@ -20,54 +20,38 @@ body {
   }
 }
 
-header {
+
+header{
   text-align: center;
 
-  .container-styles {
+  .container-styles{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     font-size: $fontSizeNav;
     font-family: "Victor Mono", monospace;
-  } 
-
+  }
   a{
     text-decoration: none;
     color: $colorTextNav;
     padding: 5px;
   }
-
   a:hover{
-    background-color: $hoverA;
-    border-radius: 5px;
-    padding: 5px;
-    color: $colorTextNav;
+    a:hover{
+      background-color: $hoverA;
+      border-radius: 5px;
+      padding: 5px;
+      color: $colorTextNav;
+    }
   }
   img{
     height: 200px
   }
   button{
-    @include button;
+    @include button; 
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
 
