@@ -51,13 +51,8 @@ header {
   }
   button{
     @include button;
-  }
-
-  
-    .logo-metamask{
-      height: 40px;
-    }
-  }
+  }  
+}
 
 
 
@@ -112,7 +107,157 @@ main{
   .buyNow{
     @include button();
   }
+  // Coneccion a la wallet 
+  .select-modal{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 16px);
+    overflow: hidden;
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    z-index: 1030;
 
+    .container-close{    
+      text-decoration: none;
+      cursor: pointer;
+      height: 100%;
+      padding: 24px calc(28px) 24px 14px;
+      border-radius: 20px 0px 0px 20px;
+      transition: background-color 250ms ease 0s, margin 250ms ease 0s;
+
+      .svg-style{
+        stroke: rgb(125, 125, 125);
+      }
+    }
+
+    .conect-wallet{
+      overflow: hidden;
+      height: 100%;
+      scrollbar-gutter: stable;
+      overscroll-behavior: contain;
+      border-radius: 12px;
+      // background: $colorBody;
+      background-color: rgb(255, 255, 255);
+      margin-right: 0px;
+      width: 390px;
+      display: flex;
+      flex-flow: column;
+      padding: 14px 16px 16px;
+      color: black;
+
+      .contaner-title-wallet{
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0px 0px 16px;
+        min-width: 0px;
+        .tittle{
+          box-sizing: border-box;
+          margin: 0px;
+          min-width: 0px;
+          font-weight: 485;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .btn-tools{
+          background-color: rgb(255, 255, 255);
+          transition: width 125ms ease-in-out 0s;
+          border-radius: 12px;
+          display: flex;
+          padding: 0px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          height: 32px;
+          width: 32px;
+          color: rgb(125, 125, 125);
+          border: none;
+          outline: none;
+          .tittle-tools{
+              width: 24px;
+              height: 24px;
+              margin: auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+
+      }
+      }
+    
+    .container-body-modal{
+      display: grid;
+      grid-auto-rows: auto;
+      row-gap: 16px;
+
+      .wallet{
+        display: grid;
+        gap: 2px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        .container-wallets{
+          border-radius: 10px;
+          align-items: stretch;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+          width: 100%;
+          background-color: rgb(249, 249, 249);
+
+          .btn-wallet{
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: unset;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            justify-content: center;
+            // gap:40px;
+            opacity: 1;
+            padding: 18px;
+            transition: all 125ms ease 0s;
+
+            .logo-metamask{
+              height: 40px;
+              border: 1px solid rgba(34, 34, 34, 0.07);
+              border-radius: 12px;
+            }
+            .name-wallet{
+              display: flex;
+              flex-flow: row;
+              -webkit-box-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              justify-content: center;
+              color:black;
+              font-size: 16px;
+              font-weight: 535;
+              padding: 0px 8px;
+            }
+          }
+          .container-desclamer{
+            box-sizing: border-box;
+            margin: 0px;
+            min-width: 0px;
+            font-weight: 485;
+            font-size: 14px;
+          }
+        }
+      }
+  
+    }
+  
+  }
+  }
 }
 
 @keyframes rotar{
@@ -128,87 +273,16 @@ main{
       width: 25rem;
       height: 25rem;
   }
+
+
+  
 }
 
 
 
 
 
-// Coneccion a la wallet 
-  .select-modal{
 
-    display: flex;
-    flex-direction: row;
-    height: calc(100% - 16px);
-    overflow: hidden;
-    position: fixed;
-    right: 8px;
-    top: 8px;
-    z-index: 1030;
-
-  .container-close{    
-    text-decoration: none;
-    cursor: pointer;
-    height: 100%;
-    padding: 24px calc(28px) 24px 14px;
-    border-radius: 20px 0px 0px 20px;
-    transition: background-color 250ms ease 0s, margin 250ms ease 0s;
-
-    .svg-style{
-      stroke: rgb(125, 125, 125);
-    }
-  }
-
-  .conect-wallet{
-    overflow: hidden;
-    height: 100%;
-    scrollbar-gutter: stable;
-    overscroll-behavior: contain;
-    border-radius: 12px;
-    background-color: red;
-
-    .contaner-title-wallet{
-      width: 100%;
-      display: flex;
-      padding: 0px;
-      align-items: center;
-      justify-content: space-between;
-      box-sizing: border-box;
-      margin: 0px 0px 16px;
-      min-width: 0px;
-
-      .btn-tools{
-        background-color: rgb(255, 255, 255);
-        transition: width 125ms ease-in-out 0s;
-        border-radius: 12px;
-        display: flex;
-        padding: 0px;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        height: 32px;
-        width: 32px;
-        color: rgb(125, 125, 125);
-        border: none;
-        outline: none;
-        .tittle-tools{
-          width: 24px;
-          height: 24px;
-          margin: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-    }
-    
-
-    .container-wallets{
-      border: 1px solid $colorTextNav;
-      border-radius: 10px;
-    }
-  }
-}
 
 footer{
 
