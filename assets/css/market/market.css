@@ -44,6 +44,10 @@ header button :focus {
   border: 1px solid #b82d2b;
 }
 
+.table tr {
+  color: #cdc4c8;
+}
+
 footer h5 {
   font-weight: 600;
 }
