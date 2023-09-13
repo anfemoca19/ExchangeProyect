@@ -53,9 +53,14 @@ header{
   }
 }
 
-
+form{
+  .btn-search{
+    @include button; 
+  }
+}
 .table{
-  tr {color: #cdc4c8;}
+  tr{color: #cdc4c8;}
+  td {color: #cdc4c8;}
 }
 
 footer{
