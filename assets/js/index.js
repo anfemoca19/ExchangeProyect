@@ -5,21 +5,40 @@
   let isLiked = false
 
 // DOM 
-const likeButton = document.getElementById("likeButton")
+const likeButton = document.querySelectorAll("likeButton")
 const likeCountElement = document.getElementById("likeCount");
-const likeIcon =  document.getElementById("likeImg");
-
 
 // clic
-let likeClicked= () => {
-  debugger
-  if (!isLiked) {
-    likeCount++;
-    likeCountElement.textContent = `${likeCount} `;
-    likeIcon.src = './assets/img/heart.svg'; // Cambia la imagen a corazón lleno
-    isLiked = true;
-  }
-};
+
+likeButton.forEach(function(button) {
+
+  button.addEventListener("click", function() {
+    // obtnemos los svg de los iconos
+    const emptyHeart =  likeButton.querySelector("svg:nth-child(1)");
+    const fullHaert = likeButton.querySelector("svg:nth-child(2)");
+
+
+    if (emptyHeart.style.display === "inherit") {
+      emptyHeart.style.display = "none";
+      fullHaert.style.display = "inherit";
+      likeCount++;
+      likeCountElement.textContent = `${likeCount} `;
+      isLiked = true;
+    }else{
+      emptyHeart.style.display = "inherit";
+      fullHaert.style.display = "none";
+      likeCount--;
+      likeCountElement.textContent = `${likeCount} `;
+      isLiked = false;
+    }
+  });
+
+  });
+
+
+
+
+
 
 
 
@@ -30,3 +49,15 @@ document.getElementById("ready").addEventListener("click", function() {
 });
 
 
+
+
+// Abrir el modal para conectar la wallet
+let modal = document.getElementById("wallet-modal")
+// open modal
+document.getElementById("btn-connet").addEventListener('click', function(){
+  modal.style.display= 'flex'
+})
+// close modal
+document.getElementById("closeModal").addEventListener('click', function(){
+  modal.style.display= 'none'
+})

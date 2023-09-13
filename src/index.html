@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Victor+Mono:wght@100;200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/home/home.css">
+  <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
   <title>Home</title>
 </head>
 <body>
@@ -20,13 +21,13 @@
         </a>
       </div>
       <div class="col-sm-4 container-styles ">
-        <a href="./home.html">Inicio</a>
+        <a href="./index.html">Inicio</a>
         <a href="./market.html">Market</a>
         <a href="">Features</a>
         <a href="">Community</a>
       </div>
       <div class="col-sm-4 container-styles">
-        <button class="button-style " >Connect a wallet</button>
+        <button class="button-style " id="btn-connet" type="button">Connect a wallet</button>
       </div>
     </header>
     <main class="mt-5">
@@ -69,6 +70,7 @@
           <div class="bottom_part"></div>
         </div>
       </section>
+      <!-- cards secction -->
       <section class="row p-5 ">
           <div class="card text-center col-3">
             <img src="../assets/img/leonBio.jpg" class="card-img-top img-card" alt="">
@@ -79,13 +81,22 @@
                   <span class="card-text col-6">1.5 ETH</p>
                 </div>
                 <div class="col-6">
-                  <button  class="like" id="likeButton" onclick="likeClicked()"><img  class="heartIcon" id="likeImg" src="./assets/img/heart-outline.svg" alt=""></button>
+                  <button  class="like" id="likeButton" > 
+                      <!-- Icono SVG vacío -->
+                    <svg  id="emptyHeart" class="heartIcon"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: inherit;">
+                      <path fill="#000000" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z"/>
+                    </svg>
+                      <!-- Icono SVG lleno(oculto) -->
+                    <svg id="fullHaert" class="heartIcon heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#ef4444" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
+                    </svg>
+                  </button>
                 <span id="likeCount">0</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card text-center ms-5 col-3">
+          <div class="card text-center ms-4 col-3">
             <img src="../assets/img/leonBio.jpg" class="card-img-top img-card" alt="">
             <div class="card-body">
               <h5 class="card-title">CyberDroids Gallery</h5>
@@ -94,13 +105,22 @@
                   <span class="card-text col-6">1.5 ETH</p>
                 </div>
                 <div class="col-6">
-                  <button  class="like" id="likeButton" onclick="likeClicked()"><img class="heartIcon"  id="likeImg"  src="./assets/img/heart-outline.svg" alt=""></button>
+                  <button  class="like" id="likeButton" > 
+                    <!-- Icono SVG vacío -->
+                  <svg  id="emptyHeart" class="heartIcon"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: inherit;">
+                    <path fill="#000000" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z"/>
+                  </svg>
+                    <!-- Icono SVG lleno(oculto) -->
+                  <svg id="fullHaert" class="heartIcon heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ef4444" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
+                  </svg>
+                </button>
                 <span id="likeCount">0</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card text-center ms-5 col-3">
+          <div class="card text-center ms-4 col-3">
             <img src="../assets/img/leonBio.jpg" class="card-img-top img-card" alt="">
             <div class="card-body">
               <h5 class="card-title">CyberDroids Gallery</h5>
@@ -109,22 +129,31 @@
                   <span class="card-text col-6">1.5 ETH</p>
                 </div>
                 <div class="col-6">
-                  <button  class="like" id="likeButton" onclick="likeClicked()"><img class="heartIcon"  id="likeImg"  src="./assets/img/heart-outline.svg" alt=""></button>
+                  <button  class="like" id="likeButton" > 
+                    <!-- Icono SVG vacío -->
+                  <svg  id="emptyHeart" class="heartIcon"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: inherit;">
+                    <path fill="#000000" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z"/>
+                  </svg>
+                    <!-- Icono SVG lleno(oculto) -->
+                  <svg id="fullHaert" class="heartIcon heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ef4444" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
+                  </svg>
+                </button>
                 <span id="likeCount">0</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row  d-flex text-center justify-content-center  align-content-around col-3 ms-5">
+          <div class="row  d-flex text-center justify-content-center  align-content-around col-3 ms-4">
             <span class="titleColection">Colección NFT más popular aquí</span>
             <button  class="buyNow">Comprar ahora</button>
           </div>
       </section>
 
 
-      <section class="select-modal">
+      <section class="select-modal" id="wallet-modal">
         <div class="container-close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+            <svg id="closeModal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
               class="svg-style">
               <polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>
@@ -145,11 +174,10 @@
           <div class="container-body-modal">
             <div class="wallet">
               <div class="container-wallets">
-                <button class="btn-wallet" id="connectWallet">
+                <button class="btn-wallet" id="connectWallet" >
                   <img class="logo-metamask" src="../assets/img/metaMask.png" alt="Logo Metamask">
                   <span class="name-wallet">MetaMask</span>
                 </button>
-                
               </div>
             </div>
             <div class="container-desclamer">

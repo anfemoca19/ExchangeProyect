@@ -85,7 +85,12 @@ main .card .img-card {
   padding: 10px;
 }
 main .card .heartIcon {
+  display: inherit;
   height: 20px;
+  width: 20px;
+}
+main .card .heart {
+  display: none;
 }
 main .card .like {
   background-color: #fff;
@@ -108,7 +113,7 @@ main .buyNow :focus {
   border: 1px solid #b82d2b;
 }
 main .select-modal {
-  display: flex;
+  display: none;
   flex-direction: row;
   height: calc(100% - 16px);
   overflow: hidden;
