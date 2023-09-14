@@ -49,7 +49,7 @@ header button :focus {
   justify-content: center;
 }
 .change .container-cuadro {
-  padding: 68px 8px 0px;
+  padding: 28px 8px 0px;
   max-width: 480px;
   width: 100%;
 }
@@ -81,7 +81,6 @@ header button :focus {
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
-  padding: 0px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -129,7 +128,6 @@ header button :focus {
   border: none;
   background-color: transparent;
   margin: 0px;
-  padding: 0px;
   cursor: pointer;
   outline: none;
 }
@@ -294,6 +292,51 @@ header button :focus {
   box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
   visibility: visible;
   animation: auto ease 0s 1 normal none running none;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-you-balance {
+  justify-content: space-between;
+  min-height: 24px;
+  padding: 8px 0px 0px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: rgb(155, 155, 155);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-you-balance .container-value-usd {
+  filter: none;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 0s;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-you-balance .container-value-usd .container-price-usd {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-you-balance .container-value-usd .container-price-usd .value-price {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 14px;
+  color: rgb(155, 155, 155);
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-you-balance .balance-your-pay {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 14px;
 }
 .change .container-cuadro .cFJEKU .change-arrow {
   display: flex;
@@ -466,6 +509,51 @@ header button :focus {
   box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
   visibility: visible;
   animation: auto ease 0s 1 normal none running none;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-you-balance {
+  justify-content: space-between;
+  min-height: 24px;
+  padding: 8px 0px 0px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: rgb(155, 155, 155);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-you-balance .container-value-usd {
+  filter: none;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 0s;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-you-balance .container-value-usd .container-price-usd {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-you-balance .container-value-usd .container-price-usd .value-price {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 14px;
+  color: rgb(155, 155, 155);
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-you-balance .balance-your-pay {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 14px;
 }
 .change .container-cuadro .cFJEKU .select-token {
   background-color: rgba(255, 255, 255, 0.07);

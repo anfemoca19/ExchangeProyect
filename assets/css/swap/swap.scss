@@ -59,7 +59,7 @@ header{
   display: flex;
   justify-content: center;
   .container-cuadro {
-    padding: 68px 8px 0px;
+    padding: 28px 8px 0px;
     max-width: 480px;
     width: 100%;
 
@@ -90,10 +90,7 @@ header{
             gap: 16px;
             width: fit-content;
             display: flex;
-            padding: 0px;
-            -webkit-box-align: center;
             align-items: center;
-            -webkit-box-pack: start;
             justify-content: flex-start;
 
             .title-swap{
@@ -142,7 +139,6 @@ header{
               border: none;
               background-color: transparent;
               margin: 0px;
-              padding: 0px;
               cursor: pointer;
               outline: none;
               .icon-settings-svg pat{
@@ -305,7 +301,56 @@ header{
                 }
               }
             }
-        }
+            .container-you-balance{
+              justify-content: space-between;
+              min-height: 24px;
+              padding: 8px 0px 0px;
+              display: flex;
+              flex-flow: row;
+              -webkit-box-align: center;
+              align-items: center;
+              color: rgb(155, 155, 155);
+              font-size: 0.75rem;
+              line-height: 1rem;
+
+              .container-value-usd{
+                filter: none;
+                opacity: 1;
+                transition: opacity 250ms ease-in-out 0s;
+                .container-price-usd{
+                  width: 100%;
+                  display: flex;
+                  padding: 0px;
+                  -webkit-box-align: center;
+                  align-items: center;
+                  -webkit-box-pack: start;
+                  justify-content: flex-start;
+                  gap: 8px;
+                  .value-price{
+                    box-sizing: border-box;
+                    margin: 0px;
+                    min-width: 0px;
+                    font-weight: 485;
+                    font-size: 14px;
+                    color:rgb(155, 155, 155)
+                  }
+                }
+              }
+              
+              .balance-your-pay{
+                width: fit-content;
+                display: flex;
+                padding: 0px;
+                align-items: center;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 485;
+                font-size: 14px;
+              }
+            }
+          }
         }
         .change-arrow{
           display: flex;
@@ -474,6 +519,55 @@ header{
                   animation: auto ease 0s 1 normal none running none;
                 }
 
+            }
+          }
+          .container-you-balance{
+            justify-content: space-between;
+            min-height: 24px;
+            padding: 8px 0px 0px;
+            display: flex;
+            flex-flow: row;
+            -webkit-box-align: center;
+            align-items: center;
+            color: rgb(155, 155, 155);
+            font-size: 0.75rem;
+            line-height: 1rem;
+
+            .container-value-usd{
+              filter: none;
+              opacity: 1;
+              transition: opacity 250ms ease-in-out 0s;
+              .container-price-usd{
+                width: 100%;
+                display: flex;
+                padding: 0px;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                justify-content: flex-start;
+                gap: 8px;
+                .value-price{
+                  box-sizing: border-box;
+                  margin: 0px;
+                  min-width: 0px;
+                  font-weight: 485;
+                  font-size: 14px;
+                  color:rgb(155, 155, 155)
+                }
+              }
+            }
+            
+            .balance-your-pay{
+              width: fit-content;
+              display: flex;
+              padding: 0px;
+              align-items: center;
+              justify-content: flex-start;
+              box-sizing: border-box;
+              margin: 0px;
+              min-width: 0px;
+              font-weight: 485;
+              font-size: 14px;
             }
           }
         }
