@@ -295,6 +295,19 @@ header button :focus {
   visibility: visible;
   animation: auto ease 0s 1 normal none running none;
 }
+.change .container-cuadro .cFJEKU .change-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  margin: -18px auto;
+  background-color: rgb(27, 27, 27);
+  border: 4px solid rgb(19, 19, 19);
+  z-index: 2;
+}
 .change .container-cuadro .cFJEKU .swap-two {
   background-color: rgb(27, 27, 27);
   border-radius: 16px;
@@ -454,18 +467,36 @@ header button :focus {
   visibility: visible;
   animation: auto ease 0s 1 normal none running none;
 }
-.change .container-cuadro .cFJEKU .change-arrow {
+.change .container-cuadro .cFJEKU .select-token {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgb(155, 155, 155);
+  cursor: auto;
+  box-shadow: none;
+  border: 1px solid transparent;
+  outline: none;
+  opacity: 0.5;
+  cursor: auto;
+  pointer-events: none;
+  padding: 16px;
+  width: 100%;
+  line-height: 24px;
+  font-weight: 535;
+  text-align: center;
+  border-radius: 16px;
+  outline: none;
+  border: 1px solid transparent;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  height: 40px;
-  width: 40px;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
   position: relative;
-  margin: -18px auto;
-  background-color: rgb(27, 27, 27);
-  border: 4px solid rgb(19, 19, 19);
-  z-index: 2;
+  z-index: 1;
+  will-change: transform;
+  transition: transform 450ms ease 0s;
+  transform: perspective(1px) translateZ(0px);
 }
 
 footer h5 {
