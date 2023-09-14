@@ -1,0 +1,484 @@
+body {
+  background: linear-gradient(to right, #482b41, #06030a);
+  /* (#482b41, #06030a); */
+  color: #cdc4c8;
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  text-align: center;
+}
+header .container-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-family: "Victor Mono", monospace;
+}
+header a {
+  text-decoration: none;
+  color: #cdc4c8;
+  padding: 5px;
+}
+header a:hover a:hover {
+  background-color: rgba(184, 45, 43, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  color: #cdc4c8;
+}
+header img {
+  height: 200px;
+}
+header button {
+  background: linear-gradient(to right, #482b41, #a536b6);
+  border-radius: 5px;
+  border: 1px solid #cdc4c8;
+  color: #cdc4c8;
+  height: 40px;
+  width: 160px;
+  font-size: 15px;
+  cursor: pointer;
+}
+header button :focus {
+  border: 1px solid #b82d2b;
+}
+
+.change {
+  display: flex;
+  justify-content: center;
+}
+.change .container-cuadro {
+  padding: 68px 8px 0px;
+  max-width: 480px;
+  width: 100%;
+}
+.change .container-cuadro .cFJEKU {
+  position: relative;
+  background: #131313;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 12px 8px 8px;
+  box-shadow: rgba(252, 114, 255, 0.08) 0px 0px 10px 0px, rgba(252, 114, 255, 0.18) 0px 40px 120px 0px;
+  z-index: 1;
+  transition: transform 250ms ease 0s;
+}
+.change .container-cuadro .cFJEKU .container-header {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  margin-bottom: 10px;
+  color: #9b9b9b;
+}
+.change .container-cuadro .cFJEKU .container-header .container-titles {
+  padding: 0px 12px;
+  gap: 16px;
+  width: fit-content;
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.change .container-cuadro .cFJEKU .container-header .container-titles .title-swap {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.change .container-cuadro .cFJEKU .container-header .container-titles .btn-buy {
+  gap: 4px;
+  background: none;
+  padding: 16px;
+  line-height: 24px;
+  font-weight: 535;
+  text-align: center;
+  border-radius: 16px;
+  outline: none;
+  border: 1px solid transparent;
+  color: #9b9b9b;
+  text-decoration: none;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  transition: transform 450ms ease 0s;
+  transform: perspective(1px) translateZ(0px);
+}
+.change .container-cuadro .cFJEKU .container-header .container-settings {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+.change .container-cuadro .cFJEKU .container-header .container-settings .menu-btn-settings {
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.change .container-cuadro .cFJEKU .container-header .container-settings .menu-btn-settings .icon-settings-svg pat {
+  fill: #9b9b9b;
+}
+.change .container-cuadro .cFJEKU .swap-one {
+  background-color: #1b1b1b;
+  border-radius: 16px;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 500;
+  height: 120px;
+  line-height: 20px;
+  padding: 16px;
+  position: relative;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  border-radius: 20px;
+  z-index: 1;
+  width: initial;
+  transition: height 1s ease 0s;
+  will-change: height;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .tittle-you-pay {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 14px;
+  user-select: none;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .input-currency {
+  filter: none;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 0s;
+  text-align: left;
+  font-size: 36px;
+  font-weight: 485;
+  max-height: 44px;
+  color: white;
+  pointer-events: auto;
+  width: 0px;
+  position: relative;
+  font-weight: 485;
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  background-color: transparent;
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+  appearance: textfield;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin {
+  display: inline-block;
+  height: inherit;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin {
+  align-items: center;
+  background-color: #131313;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  height: unset;
+  border-radius: 16px;
+  outline: none;
+  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 24px;
+  font-weight: 485;
+  width: initial;
+  padding: 4px 8px 4px 4px;
+  gap: 8px;
+  justify-content: space-between;
+  margin-left: 12px;
+  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+  visibility: visible;
+  animation: auto ease 0s 1 normal none running none;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .container-icon {
+  position: relative;
+  display: flex;
+  height: 24px;
+  width: 24px;
+  margin-right: 2px;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .container-icon .container-coin {
+  width: 24px;
+  height: 24px;
+  background: none;
+  transition: background-color 250ms ease-in 0s;
+  box-shadow: white 0px 0px 1px;
+  border-radius: 50%;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .container-icon .container-coin .icon-coin {
+  opacity: 1;
+  transition: opacity 250ms ease-in 0s;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .name-coin {
+  margin: 0px 0.25rem;
+  font-size: 20px;
+  font-weight: 535;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-coin span svg {
+  margin: 0px 0.25rem 0px 8px;
+  height: 35%;
+}
+.change .container-cuadro .cFJEKU .swap-one .pkFjr .container-pay .select-coin .btn-rose {
+  align-items: center;
+  background-color: #fc72ff;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  height: unset;
+  border-radius: 16px;
+  outline: none;
+  user-select: none;
+  border: 1px solid #fc72ff;
+  font-size: 24px;
+  font-weight: 485;
+  width: initial;
+  padding: 6px 6px 6px 8px;
+  gap: 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: 12px;
+  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+  visibility: visible;
+  animation: auto ease 0s 1 normal none running none;
+}
+.change .container-cuadro .cFJEKU .swap-two {
+  background-color: #1b1b1b;
+  border-radius: 16px;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 500;
+  height: 120px;
+  line-height: 20px;
+  padding: 16px;
+  position: relative;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  border-radius: 20px;
+  z-index: 1;
+  width: initial;
+  transition: height 1s ease 0s;
+  will-change: height;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .tittle-you-pay {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 485;
+  font-size: 14px;
+  user-select: none;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .input-currency {
+  filter: none;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 0s;
+  text-align: left;
+  font-size: 36px;
+  font-weight: 485;
+  max-height: 44px;
+  color: white;
+  pointer-events: auto;
+  width: 0px;
+  position: relative;
+  font-weight: 485;
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  background-color: transparent;
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+  appearance: textfield;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin {
+  display: inline-block;
+  height: inherit;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin {
+  align-items: center;
+  background-color: #131313;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  height: unset;
+  border-radius: 16px;
+  outline: none;
+  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 24px;
+  font-weight: 485;
+  width: initial;
+  padding: 4px 8px 4px 4px;
+  gap: 8px;
+  justify-content: space-between;
+  margin-left: 12px;
+  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+  visibility: visible;
+  animation: auto ease 0s 1 normal none running none;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .container-icon {
+  position: relative;
+  display: none;
+  height: 24px;
+  width: 24px;
+  margin-right: 2px;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .container-icon .container-coin {
+  width: 24px;
+  height: 24px;
+  background: none;
+  transition: background-color 250ms ease-in 0s;
+  box-shadow: white 0px 0px 1px;
+  border-radius: 50%;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .container-icon .container-coin .icon-coin {
+  opacity: 1;
+  transition: opacity 250ms ease-in 0s;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span .container-select-coin .name-coin {
+  margin: 0px 0.25rem;
+  font-size: 20px;
+  font-weight: 535;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-coin span svg {
+  margin: 0px 0.25rem 0px 8px;
+  height: 35%;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .btn-rose {
+  align-items: center;
+  background-color: #fc72ff;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  height: unset;
+  border-radius: 16px;
+  outline: none;
+  user-select: none;
+  border: 1px solid #fc72ff;
+  font-size: 24px;
+  font-weight: 485;
+  width: initial;
+  padding: 6px 6px 6px 8px;
+  gap: 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: 12px;
+  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+  visibility: visible;
+  animation: auto ease 0s 1 normal none running none;
+}
+.change .container-cuadro .cFJEKU .swap-two .pkFjr .container-pay .select-coin .select-token {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #9b9b9b;
+  cursor: auto;
+  box-shadow: none;
+  border: 1px solid transparent;
+  outline: none;
+  opacity: 0.5;
+  cursor: auto;
+  pointer-events: none;
+}
+.change .container-cuadro .cFJEKU .change-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  margin: -18px auto;
+  background-color: #1b1b1b;
+  border: 4px solid #131313;
+  z-index: 2;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+footer li {
+  color: #cdc4c8 a;
+  color-text-decoration: none;
+  color-color: #cdc4c8;
+}
+footer img {
+  height: 100px;
+}

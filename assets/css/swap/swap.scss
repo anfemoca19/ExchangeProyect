@@ -1,0 +1,513 @@
+
+@import "../variables.scss";
+
+body {
+  background: $colorBody;
+  /* (#482b41, #06030a); */
+  color: $colorTextNav;
+  font-family: 'Playfair Display', serif;
+}
+@mixin button{
+  background: $gradientButton;
+  border-radius: 5px;
+  border: 1px solid #cdc4c8;
+  color: #cdc4c8;
+  height: 40px;
+  width: 160px;
+  font-size: $fontSizeButton;
+  cursor: pointer;
+  :focus{
+    border: 1px solid #b82d2b;
+  }
+}
+
+
+
+header{
+  text-align: center;
+
+  .container-styles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: $fontSizeNav;
+    font-family: "Victor Mono", monospace;
+  }
+  a{
+    text-decoration: none;
+    color: $colorTextNav;
+    padding: 5px;
+  }
+  a:hover{
+    a:hover{
+      background-color: $hoverA;
+      border-radius: 5px;
+      padding: 5px;
+      color: $colorTextNav;
+    }
+  }
+  img{
+    height: 200px
+  }
+  button{
+    @include button; 
+  }
+}
+
+.change{
+  display: flex;
+  justify-content: center;
+
+  .container-cuadro {
+    padding: 68px 8px 0px;
+    max-width: 480px;
+    width: 100%;
+
+    .cFJEKU {
+      position: relative;
+      background: rgb(19, 19, 19);
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 12px 8px 8px;
+      box-shadow: rgba(252, 114, 255, 0.08) 0px 0px 10px 0px, rgba(252, 114, 255, 0.18) 0px 40px 120px 0px;
+      z-index: 1;
+      transition: transform 250ms ease 0s;
+
+        .container-header{
+          width: 100%;
+          display: flex;
+          padding: 0px;
+          align-items: center;
+          justify-content: space-between;
+          box-sizing: border-box;
+          margin: 0px;
+          min-width: 0px;
+          margin-bottom: 10px;
+          color: rgb(155, 155, 155);
+        
+          .container-titles{
+            padding: 0px 12px;
+            gap: 16px;
+            width: fit-content;
+            display: flex;
+            padding: 0px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+
+            .title-swap{
+              box-sizing: border-box;
+              margin: 0px;
+              min-width: 0px;
+              font-weight: 485;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgb(255, 255, 255);
+            }
+
+            .btn-buy{
+              gap: 4px;
+              background: none;
+              padding: 16px;
+              line-height: 24px;
+              font-weight: 535;
+              text-align: center;
+              border-radius: 16px;
+              outline: none;
+              border: 1px solid transparent;
+              color:rgb(155, 155, 155);
+              text-decoration: none;
+              display: flex;
+              -webkit-box-pack: center;
+              justify-content: center;
+              flex-wrap: nowrap;
+              -webkit-box-align: center;
+              align-items: center;
+              cursor: pointer;
+              position: relative;
+              z-index: 1;
+              will-change: transform;
+              transition: transform 450ms ease 0s;
+              transform: perspective(1px) translateZ(0px);
+            }
+          }
+          .container-settings{
+            display: flex;
+            padding: 0px;
+            align-items: center;
+            justify-content: flex-start;
+            width: fit-content;
+            .menu-btn-settings{
+              border: none;
+              background-color: transparent;
+              margin: 0px;
+              padding: 0px;
+              cursor: pointer;
+              outline: none;
+              .icon-settings-svg pat{
+                fill: rgb(155, 155, 155);
+              }
+            }
+          }
+        }
+        .swap-one{
+          background-color: rgb(27, 27, 27);
+          border-radius: 16px;
+          color: rgb(155, 155, 155);
+          font-size: 14px;
+          font-weight: 500;
+          height: 120px;
+          line-height: 20px;
+          padding: 16px;
+          position: relative;
+          .pkFjr {
+            display: flex;
+            flex-flow: column;
+            position: relative;
+            border-radius: 20px;
+            z-index: 1;
+            width: initial;
+            transition: height 1s ease 0s;
+            will-change: height;
+            .tittle-you-pay{
+              box-sizing: border-box;
+              margin: 0px;
+              min-width: 0px;
+              font-weight: 485;
+              font-size: 14px;
+              user-select: none;
+            }
+            .container-pay{
+              display: flex;
+              flex-flow: row;
+              align-items: center;
+              justify-content: space-between;
+              .input-currency{
+                filter: none;
+                opacity: 1;
+                transition: opacity 250ms ease-in-out 0s;
+                text-align: left;
+                font-size: 36px;
+                font-weight: 485;
+                max-height: 44px;
+                color: rgb(255, 255, 255);
+                pointer-events: auto;
+                width: 0px;
+                position: relative;
+                font-weight: 485;
+                outline: none;
+                border: none;
+                flex: 1 1 auto;
+                background-color: transparent;
+                font-size: 28px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0px;
+                appearance: textfield;
+              }
+              .select-coin{
+                display: inline-block;
+                height: inherit;
+                .btn-coin{
+                  align-items: center;
+                  background-color: rgb(19, 19, 19);
+                  opacity: 1;
+                  color: rgb(255, 255, 255);
+                  cursor: pointer;
+                  height: unset;
+                  border-radius: 16px;
+                  outline: none;
+                  user-select: none;
+                  border: 1px solid rgba(255, 255, 255, 0.07);
+                  font-size: 24px;
+                  font-weight: 485;
+                  width: initial;
+                  padding: 4px 8px 4px 4px;
+                  gap: 8px;
+                  justify-content: space-between;
+                  margin-left: 12px;
+                  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+                  visibility: visible;
+                  animation: auto ease 0s 1 normal none running none;
+                  
+                  span{
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    .container-select-coin{
+                      width: 100%;
+                      display: flex;
+                      padding: 0px;
+                      align-items: center;
+                      -webkit-box-pack: start;
+                      justify-content: flex-start;
+                      .container-icon{
+                        position: relative;
+                        display: flex;
+                        height: 24px;
+                        width: 24px;
+                        margin-right: 2px;
+                        .container-coin{
+                          width: 24px;
+                          height: 24px;
+                          background: none;
+                          transition: background-color 250ms ease-in 0s;
+                          box-shadow: white 0px 0px 1px;
+                          border-radius: 50%;
+
+                          .icon-coin{
+                            opacity: 1;
+                            transition: opacity 250ms ease-in 0s;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                          }
+                        }
+                      }
+                      .name-coin{
+                        margin: 0px 0.25rem;
+                        font-size: 20px;
+                        font-weight: 535;
+                      }
+                    } 
+                    svg{
+                    margin: 0px 0.25rem 0px 8px;
+                    height: 35%;
+                    }
+                  }
+                }
+                .btn-rose{
+                  align-items: center;
+                  background-color: rgb(252, 114, 255);
+                  opacity: 1;
+                  color: rgb(255, 255, 255);
+                  cursor: pointer;
+                  height: unset;
+                  border-radius: 16px;
+                  outline: none;
+                  user-select: none;
+                  border: 1px solid rgb(252, 114, 255);
+                  font-size: 24px;
+                  font-weight: 485;
+                  width: initial;
+                  padding: 6px 6px 6px 8px;
+                  gap: 8px;
+                  -webkit-box-pack: justify;
+                  justify-content: space-between;
+                  margin-left: 12px;
+                  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+                  visibility: visible;
+                  animation: auto ease 0s 1 normal none running none;
+                }
+              }
+            }
+        }
+        }
+        .swap-two{
+          background-color: rgb(27, 27, 27);
+          border-radius: 16px;
+          color: rgb(155, 155, 155);
+          font-size: 14px;
+          font-weight: 500;
+          height: 120px;
+          line-height: 20px;
+          padding: 16px;
+          position: relative;
+          .pkFjr {
+            display: flex;
+            flex-flow: column;
+            position: relative;
+            border-radius: 20px;
+            z-index: 1;
+            width: initial;
+            transition: height 1s ease 0s;
+            will-change: height;
+            .tittle-you-pay{
+              box-sizing: border-box;
+              margin: 0px;
+              min-width: 0px;
+              font-weight: 485;
+              font-size: 14px;
+              user-select: none;
+            }
+            .container-pay{
+              display: flex;
+              flex-flow: row;
+              align-items: center;
+              justify-content: space-between;
+              .input-currency{
+                filter: none;
+                opacity: 1;
+                transition: opacity 250ms ease-in-out 0s;
+                text-align: left;
+                font-size: 36px;
+                font-weight: 485;
+                max-height: 44px;
+                color: rgb(255, 255, 255);
+                pointer-events: auto;
+                width: 0px;
+                position: relative;
+                font-weight: 485;
+                outline: none;
+                border: none;
+                flex: 1 1 auto;
+                background-color: transparent;
+                font-size: 28px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0px;
+                appearance: textfield;
+              }
+              .select-coin{
+                display: inline-block;
+                height: inherit;
+                .btn-coin{
+                  align-items: center;
+                  background-color: rgb(19, 19, 19);
+                  opacity: 1;
+                  color: rgb(255, 255, 255);
+                  cursor: pointer;
+                  height: unset;
+                  border-radius: 16px;
+                  outline: none;
+                  user-select: none;
+                  border: 1px solid rgba(255, 255, 255, 0.07);
+                  font-size: 24px;
+                  font-weight: 485;
+                  width: initial;
+                  padding: 4px 8px 4px 4px;
+                  gap: 8px;
+                  justify-content: space-between;
+                  margin-left: 12px;
+                  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+                  visibility: visible;
+                  animation: auto ease 0s 1 normal none running none;
+                  
+                  span{
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    .container-select-coin{
+                      width: 100%;
+                      display: flex;
+                      padding: 0px;
+                      align-items: center;
+                      -webkit-box-pack: start;
+                      justify-content: flex-start;
+                      .container-icon{
+                        position: relative;
+                        display: none;
+                        height: 24px;
+                        width: 24px;
+                        margin-right: 2px;
+                        .container-coin{
+                          width: 24px;
+                          height: 24px;
+                          background: none;
+                          transition: background-color 250ms ease-in 0s;
+                          box-shadow: white 0px 0px 1px;
+                          border-radius: 50%;
+
+                          .icon-coin{
+                            opacity: 1;
+                            transition: opacity 250ms ease-in 0s;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                          }
+                        }
+                      }
+                      .name-coin{
+                        margin: 0px 0.25rem;
+                        font-size: 20px;
+                        font-weight: 535;
+                      }
+                    } 
+                    svg{
+                    margin: 0px 0.25rem 0px 8px;
+                    height: 35%;
+                    }
+                  }
+                }
+                .btn-rose{
+                  align-items: center;
+                  background-color: rgb(252, 114, 255);
+                  opacity: 1;
+                  color: rgb(255, 255, 255);
+                  cursor: pointer;
+                  height: unset;
+                  border-radius: 16px;
+                  outline: none;
+                  user-select: none;
+                  border: 1px solid rgb(252, 114, 255);
+                  font-size: 24px;
+                  font-weight: 485;
+                  width: initial;
+                  padding: 6px 6px 6px 8px;
+                  gap: 8px;
+                  -webkit-box-pack: justify;
+                  justify-content: space-between;
+                  margin-left: 12px;
+                  box-shadow: rgba(34, 34, 34, 0.04) 0px 0px 10px 0px;
+                  visibility: visible;
+                  animation: auto ease 0s 1 normal none running none;
+                }
+                .select-token {
+                  background-color: rgba(255, 255, 255, 0.07);
+                  color: rgb(155, 155, 155);
+                  cursor: auto;
+                  box-shadow: none;
+                  border: 1px solid transparent;
+                  outline: none;
+                  opacity: 0.5;
+                  cursor: auto;
+                  pointer-events: none;}
+              }
+            }
+        }
+        }
+        .change-arrow{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 12px;
+          height: 40px;
+          width: 40px;
+          position: relative;
+          margin: -18px auto;
+          background-color: rgb(27, 27, 27);
+          border: 4px solid rgb(19, 19, 19);
+          z-index: 2;
+        
+        }
+    }
+    
+  }
+}
+
+
+footer{
+
+  h5{
+    font-weight:$footerTitle;
+  }
+
+  li{
+    color:$colorTextNav
+    a{
+      text-decoration: none;
+      color:$colorTextNav
+    }
+  }
+  img{
+    height: 100px;
+  }
+}

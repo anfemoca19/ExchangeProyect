@@ -49,6 +49,9 @@ document.getElementById("ready").addEventListener("click", function() {
 });
 
 
+document.getElementById("buyNow").addEventListener("click", function() {
+  window.location.href = "swap.html";
+});
 
 
 // Abrir el modal para conectar la wallet
