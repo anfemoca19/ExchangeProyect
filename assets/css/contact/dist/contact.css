@@ -13,7 +13,7 @@ header .container-styles {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Victor Mono", monospace;
 }
 header a {
@@ -21,14 +21,14 @@ header a {
   color: #cdc4c8;
   padding: 5px;
 }
-header a:hover a:hover {
+header a:hover {
   background-color: rgba(184, 45, 43, 0.2);
   border-radius: 5px;
   padding: 5px;
   color: #cdc4c8;
 }
 header img {
-  height: 200px;
+  height: 150px;
 }
 header button {
   background: linear-gradient(to right, #482b41, #a536b6);
@@ -44,7 +44,10 @@ header button :focus {
   border: 1px solid #b82d2b;
 }
 
-form .btn-search {
+fieldset span {
+  color: #B82D2B;
+}
+fieldset button {
   background: linear-gradient(to right, #482b41, #a536b6);
   border-radius: 5px;
   border: 1px solid #cdc4c8;
@@ -54,15 +57,11 @@ form .btn-search {
   font-size: 15px;
   cursor: pointer;
 }
-form .btn-search :focus {
+fieldset button :focus {
   border: 1px solid #b82d2b;
 }
-
-.table tr {
-  color: #cdc4c8;
-}
-.table td {
-  color: #cdc4c8;
+fieldset button:focus {
+  border: 1px solid #b82d2b;
 }
 
 footer h5 {
@@ -75,4 +74,4 @@ footer li {
 }
 footer img {
   height: 100px;
-}/*# sourceMappingURL=market.css.map */
+}

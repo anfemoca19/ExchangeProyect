@@ -73,3 +73,16 @@ searchInput.addEventListener('input', function () {
 // Cargar y mostrar datos por defecto al cargar la página
 cargarDatos()
   .then(data => filtrarYMostrarDatos(data, ''));
+
+
+
+// validar coneccion de la wallet
+
+ const validaConnection = () => {
+  let btn_connect = document.getElementById('btn-connet')
+  let nombre = localStorage.getItem('nombre');
+
+  if(!nombre ){
+    btn_connect.style.display = none;
+  }
+ }

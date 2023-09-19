@@ -1,0 +1,1 @@
+const inputPay = document.getElementById('')

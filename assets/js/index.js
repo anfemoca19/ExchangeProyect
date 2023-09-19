@@ -56,11 +56,21 @@ document.getElementById("buyNow").addEventListener("click", function() {
 
 // Abrir el modal para conectar la wallet
 let modal = document.getElementById("wallet-modal")
+
 // open modal
 document.getElementById("btn-connet").addEventListener('click', function(){
   modal.style.display= 'flex'
 })
+
 // close modal
 document.getElementById("closeModal").addEventListener('click', function(){
   modal.style.display= 'none'
+})
+
+
+// Coneccion wallet
+document.getElementById('connectWallet').addEventListener('click', function(){
+  localStorage.setItem('metamask','true')
+  let btn_connect = document.getElementById('btn-connet')
+  btn_connect.style.display = none;
 })

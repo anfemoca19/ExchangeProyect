@@ -13,7 +13,7 @@ header .container-styles {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Victor Mono", monospace;
 }
 header a {
@@ -28,7 +28,7 @@ header a:hover a:hover {
   color: #cdc4c8;
 }
 header img {
-  height: 200px;
+  height: 150px;
 }
 header button {
   background: linear-gradient(to right, #482b41, #a536b6);

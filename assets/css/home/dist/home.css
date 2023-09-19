@@ -13,7 +13,7 @@ header .container-styles {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Victor Mono", monospace;
 }
 header a {
@@ -126,12 +126,12 @@ main .select-modal .container-close {
   text-decoration: none;
   cursor: pointer;
   height: 100%;
-  padding: 24px 28px 24px 14px;
+  padding: 24px calc(28px) 24px 14px;
   border-radius: 20px 0px 0px 20px;
   transition: background-color 250ms ease 0s, margin 250ms ease 0s;
 }
 main .select-modal .container-close .svg-style {
-  stroke: rgb(125, 125, 125);
+  stroke: #7d7d7d;
 }
 main .select-modal .conect-wallet {
   overflow: hidden;
@@ -139,7 +139,7 @@ main .select-modal .conect-wallet {
   scrollbar-gutter: stable;
   overscroll-behavior: contain;
   border-radius: 12px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   margin-right: 0px;
   width: 390px;
   display: flex;
@@ -166,7 +166,7 @@ main .select-modal .conect-wallet .contaner-title-wallet .tittle {
   line-height: 24px;
 }
 main .select-modal .conect-wallet .contaner-title-wallet .btn-tools {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   transition: width 125ms ease-in-out 0s;
   border-radius: 12px;
   display: flex;
@@ -176,7 +176,7 @@ main .select-modal .conect-wallet .contaner-title-wallet .btn-tools {
   overflow: hidden;
   height: 32px;
   width: 32px;
-  color: rgb(125, 125, 125);
+  color: #7d7d7d;
   border: none;
   outline: none;
 }
@@ -207,9 +207,10 @@ main .select-modal .conect-wallet .container-body-modal .wallet .container-walle
   justify-content: space-between;
   position: relative;
   width: 100%;
-  background-color: rgb(249, 249, 249);
+  background-color: #f9f9f9;
 }
 main .select-modal .conect-wallet .container-body-modal .wallet .container-wallets .btn-wallet {
+  -webkit-box-align: center;
   align-items: center;
   background-color: unset;
   border: none;
@@ -217,6 +218,7 @@ main .select-modal .conect-wallet .container-body-modal .wallet .container-walle
   display: flex;
   flex: 1 1 auto;
   flex-direction: row;
+  -webkit-box-pack: justify;
   justify-content: center;
   opacity: 1;
   padding: 18px;
@@ -230,7 +232,9 @@ main .select-modal .conect-wallet .container-body-modal .wallet .container-walle
 main .select-modal .conect-wallet .container-body-modal .wallet .container-wallets .btn-wallet .name-wallet {
   display: flex;
   flex-flow: row;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
   color: black;
   font-size: 16px;
@@ -269,4 +273,4 @@ footer li {
 }
 footer img {
   height: 100px;
-}/*# sourceMappingURL=home.css.map */
+}
