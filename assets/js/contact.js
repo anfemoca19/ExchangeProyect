@@ -1,7 +1,5 @@
-// validar coneccion de la wallet
-
 const validaConnection = () => {
-
+ 
   // Uso de local stroage para obtener la coneccion de la wallet
   let nombre = localStorage.getItem('metamask');
   let connectWallet = document.getElementById('connect-wallet')
@@ -15,5 +13,4 @@ const validaConnection = () => {
   }
   
 }
-
 validaConnection()

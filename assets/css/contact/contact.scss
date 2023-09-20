@@ -53,7 +53,15 @@ header {
   button{
     @include button;
   }
-
+  .connect-wallet{
+    display: none;
+    gap: 3px;
+    .icon-user{
+      border-radius: 100px;
+      height: 26px;
+      width: 25px;
+    }
+  }
 }
 
 

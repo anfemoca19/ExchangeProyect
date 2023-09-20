@@ -62,15 +62,48 @@ document.getElementById("btn-connet").addEventListener('click', function(){
   modal.style.display= 'flex'
 })
 
-// close modal
-document.getElementById("closeModal").addEventListener('click', function(){
-  modal.style.display= 'none'
-})
+// closeModal
+var btnCerrar = document.getElementById("closeModal");
+btnCerrar.addEventListener("click", closeModal);
 
+function closeModal() {
+  modal.style.display = "none";
+}
 
 // Coneccion wallet
 document.getElementById('connectWallet').addEventListener('click', function(){
   localStorage.setItem('metamask','true')
+  closeModal()
   let btn_connect = document.getElementById('btn-connet')
-  btn_connect.style.display = none;
+  btn_connect.style.display = "none"
+  let connectWallet = document.getElementById('connect-wallet')
+  connectWallet.style.display = "block"
 })
+
+
+// validar coneccion de la wallet
+
+const validaConnection = () => {
+
+  // Uso de local stroage para obtener la coneccion de la wallet
+  let nombre = localStorage.getItem('metamask');
+  let connectWallet = document.getElementById('connect-wallet')
+  let btn_connect = document.getElementById('btn-connet')
+  if(nombre ){
+    connectWallet.style.display = "block"
+    btn_connect.style.display = "none";
+  }else{
+    connectWallet.style.display = "none"
+    btn_connect.style.display = "block";
+  }
+  
+}
+
+function limpiarLocalStorage() {
+  localStorage.clear(); // Esto eliminará todos los datos almacenados en Local Storage
+}
+
+// // Agregar un listener al evento beforeunload o unload
+// window.addEventListener('beforeunload', limpiarLocalStorage);
+
+// validaConnection()

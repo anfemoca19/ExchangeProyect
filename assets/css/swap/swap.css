@@ -43,6 +43,15 @@ header button {
 header button :focus {
   border: 1px solid #b82d2b;
 }
+header .connect-wallet {
+  display: none;
+  gap: 3px;
+}
+header .connect-wallet .icon-user {
+  border-radius: 100px;
+  height: 26px;
+  width: 25px;
+}
 
 .change {
   display: flex;

@@ -39,9 +39,19 @@ header button {
   width: 160px;
   font-size: 15px;
   cursor: pointer;
+  display: none;
 }
 header button :focus {
   border: 1px solid #b82d2b;
+}
+header .connect-wallet {
+  display: none;
+  gap: 3px;
+}
+header .connect-wallet .icon-user {
+  border-radius: 100px;
+  height: 26px;
+  width: 25px;
 }
 
 form .btn-search {
@@ -66,7 +76,6 @@ form .btn-search :focus {
 }
 
 .container-advertising {
-  position: fixed;
   right: 0px;
   top: 90px;
 }

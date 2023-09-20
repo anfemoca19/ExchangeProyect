@@ -1,6 +1,5 @@
 "use strict";
 
-// validar coneccion de la wallet
 var validaConnection = function validaConnection() {
   // Uso de local stroage para obtener la coneccion de la wallet
   var nombre = localStorage.getItem('metamask');
