@@ -33,35 +33,65 @@
 
 
     <main  class="container">
-      <section> 
-        <div class="row g-3 align-items-center mb-5">
-          <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Buscar</label>
-          </div>
-          <div class="col-auto">
-            <input type="text" id="searchInput" class="form-control" aria-describedby="passwordHelpInline">
-          </div>
+      <h1 class="mb-5 ">Criptomonedas por capitalización de mercado</h1>
+
+      <div class="row g-0 text-center">
+        <div class="col-sm-6 col-md-8">
+          <section id="tabla containerd-flex justify-content-center">
+              <div class="row g-3 align-items-center mb-5">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Buscar</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" id="searchInput" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Simbolo</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Capitalizacion del mercado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="cryptoTableBody">
+                  </tbody>
+                </table>
+                </div>
+          </section>
         </div>
-
-
-      </section>
-    <section id="tabla">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Simbolo</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Capitalizacion del mercado</th>
-          </tr>
-        </thead>
-        <tbody id="cryptoTableBody">
-          
-          
-        </tbody>
-      </table>
-    </section>
+        <div class="col-6 col-md-4 p-4 container-advertising">
+            <div class="container text-center">
+              <div class="column  d-flex  flex-column align-items-center gap-4 ">
+                <div class="col advertising p-2">
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner p-2">
+                      <div class="carousel-item active">
+                        <img src="https://phantom-expansion.unidadeditorial.es/acff52b88d1922a63f50462f1b9998c1/crop/0x0/1870x1247/resize/660/f/webp/assets/multimedia/imagenes/2021/06/28/16248635621834.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://files.lafm.com.co/assets/public/styles/img_node_706x392/public/2022-07/cripto_token.jpg.webp?VersionId=XlUkVylB6Q9REaQHHAdATwxgSGpZxNrn&itok=V-ZpcMtc" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i0.wp.com/criptotendencia.com/wp-content/uploads/2023/03/DeFi.jpg?resize=890%2C450&ssl=1" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col advertising">
+                  <div class="p-2">
+                    <img 
+                    src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-1-co.07e8324a.png&w=640&q=100"
+                    alt="celular-trading">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </main>
     
 
