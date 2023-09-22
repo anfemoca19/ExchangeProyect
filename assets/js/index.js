@@ -86,6 +86,7 @@ document.getElementById('connectWallet').addEventListener('click', function(){
 const validaConnection = () => {
 
   // Uso de local stroage para obtener la coneccion de la wallet
+  debugger
   let nombre = localStorage.getItem('metamask');
   let connectWallet = document.getElementById('connect-wallet')
   let btn_connect = document.getElementById('btn-connet')
@@ -103,7 +104,7 @@ function limpiarLocalStorage() {
   localStorage.clear(); // Esto eliminará todos los datos almacenados en Local Storage
 }
 
-// // Agregar un listener al evento beforeunload o unload
+// Agregar un listener al evento beforeunload o unload
 // window.addEventListener('beforeunload', limpiarLocalStorage);
 
-// validaConnection()
+validaConnection()

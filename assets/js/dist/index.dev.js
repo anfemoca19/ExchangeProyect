@@ -61,6 +61,7 @@ document.getElementById('connectWallet').addEventListener('click', function () {
 
 var validaConnection = function validaConnection() {
   // Uso de local stroage para obtener la coneccion de la wallet
+  debugger;
   var nombre = localStorage.getItem('metamask');
   var connectWallet = document.getElementById('connect-wallet');
   var btn_connect = document.getElementById('btn-connet');
@@ -76,6 +77,8 @@ var validaConnection = function validaConnection() {
 
 function limpiarLocalStorage() {
   localStorage.clear(); // Esto eliminará todos los datos almacenados en Local Storage
-} // // Agregar un listener al evento beforeunload o unload
+} // Agregar un listener al evento beforeunload o unload
 // window.addEventListener('beforeunload', limpiarLocalStorage);
-// validaConnection()
+
+
+validaConnection();

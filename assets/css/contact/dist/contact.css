@@ -56,6 +56,29 @@ header .connect-wallet .icon-user {
 fieldset span {
   color: #B82D2B;
 }
+fieldset .style-input {
+  background-color: transparent;
+  color: #cdc4c8;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  width: 100%;
+  font-size: 1rem;
+}
+fieldset .style-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cdc4c8;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
 fieldset button {
   background: linear-gradient(to right, #482b41, #a536b6);
   border-radius: 5px;
