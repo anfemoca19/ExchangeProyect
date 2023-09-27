@@ -61,7 +61,6 @@ document.getElementById('connectWallet').addEventListener('click', function () {
 
 var validaConnection = function validaConnection() {
   // Uso de local stroage para obtener la coneccion de la wallet
-  debugger;
   var nombre = localStorage.getItem('metamask');
   var connectWallet = document.getElementById('connect-wallet');
   var btn_connect = document.getElementById('btn-connet');

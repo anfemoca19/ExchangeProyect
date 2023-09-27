@@ -5,15 +5,15 @@ body {
   background: $colorBody;
   /* (#482b41, #06030a); */
   color: $colorTextNav;
-  font-family: 'Playfair Display', serif;
 }
+
 @mixin button{
   background: $gradientButton;
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
-  height: 40px;
-  width: 160px;
+  height: 50px;
+  width: 195px;
   font-size: $fontSizeButton;
   cursor: pointer;
   :focus{
@@ -48,8 +48,9 @@ header{
     }
   }
   img{
-    height: 150px
+    height: 130px
   }
+
   button{
     @include button; 
   }
@@ -619,21 +620,24 @@ header{
   }
 
 
+  footer{
 
-footer{
-
-  h5{
-    font-weight:$footerTitle;
-  }
-
-  li{
-    color:$colorTextNav
-    a{
+    h5{
+      font-weight:$footerTitle;
+    }
+  
+    li{
+      display: block;
+      padding: 0.5rem 1rem;
       text-decoration: none;
-      color:$colorTextNav
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+      color: $colorTextNav;
+      a{
+        text-decoration: none;
+        color:$colorTextNav
+      }
+    }
+    img{
+      height: 100px;
     }
   }
-  img{
-    height: 100px;
-  }
-}

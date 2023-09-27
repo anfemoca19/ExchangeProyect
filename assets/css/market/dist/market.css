@@ -2,7 +2,6 @@ body {
   background: linear-gradient(to right, #482b41, #06030a);
   /* (#482b41, #06030a); */
   color: #cdc4c8;
-  font-family: "Playfair Display", serif;
 }
 
 header {
@@ -28,16 +27,16 @@ header a:hover a:hover {
   color: #cdc4c8;
 }
 header img {
-  height: 150px;
+  height: 130px;
 }
 header button {
   background: linear-gradient(to right, #482b41, #a536b6);
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
-  height: 40px;
-  width: 160px;
-  font-size: 15px;
+  height: 50px;
+  width: 195px;
+  font-size: 18px;
   cursor: pointer;
   display: none;
 }
@@ -59,13 +58,22 @@ form .btn-search {
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
-  height: 40px;
-  width: 160px;
-  font-size: 15px;
+  height: 50px;
+  width: 195px;
+  font-size: 18px;
   cursor: pointer;
 }
 form .btn-search :focus {
   border: 1px solid #b82d2b;
+}
+
+.style-input {
+  background-color: transparent;
+  color: #cdc4c8;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  width: 100%;
+  font-size: 1rem;
 }
 
 .table tr {
@@ -101,9 +109,15 @@ footer h5 {
   font-weight: 600;
 }
 footer li {
-  color: #cdc4c8 a;
-  color-text-decoration: none;
-  color-color: #cdc4c8;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  color: #cdc4c8;
+}
+footer li a {
+  text-decoration: none;
+  color: #cdc4c8;
 }
 footer img {
   height: 100px;

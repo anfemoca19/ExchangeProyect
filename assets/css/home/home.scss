@@ -3,9 +3,7 @@
 
 body {
   background: $colorBody;
-  /* (#482b41, #06030a); */
   color: $colorTextNav;
-  font-family: 'Playfair Display', serif;
 }
 
 @mixin button{
@@ -13,8 +11,8 @@ body {
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
-  height: 40px;
-  width: 160px;
+  height: 50px;
+  width: 195px;
   font-size: $fontSizeButton;
   cursor: pointer;
   :focus{
@@ -47,7 +45,7 @@ header {
     color: $colorTextNav;
   }
   img{
-    height: 150px
+    height: 130px
   }
 
   button{
@@ -80,7 +78,7 @@ main{
   }
 
   .titleOpere{
-    font-size: 50px;
+    font-size: 55px;
   }
 
   .animated-img{
@@ -165,18 +163,22 @@ main{
     transition: opacity 250ms ease 0s;
 
     .btn-learmore{
-      color: white;
+      color: black;
       border: 1px solid white;
+      background-color: #cdc4c8;
       text-decoration: none;
       padding: 16px;
       width: 200px;
       line-height: 24px;
       text-align: center;
-      border-radius: 16px;
+      border-radius: 5px;
       cursor: pointer;
       transition: transform 450ms ease 0s;
       transform: perspective(1px) translateZ(0px);
-  
+      :hover{
+        background-color: #532c59;
+      }
+      
     }
   }
 
@@ -358,7 +360,6 @@ main{
 
 
 
-
 footer{
 
   h5{
@@ -366,7 +367,11 @@ footer{
   }
 
   li{
-    color:$colorTextNav
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: $colorTextNav;
     a{
       text-decoration: none;
       color:$colorTextNav

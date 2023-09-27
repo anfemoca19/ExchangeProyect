@@ -3,9 +3,7 @@
 
 body {
   background: $colorBody;
-  /* (#482b41, #06030a); */
   color: $colorTextNav;
-  font-family: 'Playfair Display', serif;
 }
 
 @mixin button{
@@ -13,8 +11,8 @@ body {
   border-radius: 5px;
   border: 1px solid #cdc4c8;
   color: #cdc4c8;
-  height: 40px;
-  width: 160px;
+  height: 50px;
+  width: 195px;
   font-size: $fontSizeButton;
   cursor: pointer;
   :focus{
@@ -48,8 +46,9 @@ header {
     color: $colorTextNav;
   }
   img{
-    height: 150px
+    height: 130px
   }
+
   button{
     @include button;
   }
@@ -103,7 +102,6 @@ fieldset{
   }
 }
 
-
 footer{
 
   h5{
@@ -111,7 +109,11 @@ footer{
   }
 
   li{
-    color:$colorTextNav
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: $colorTextNav;
     a{
       text-decoration: none;
       color:$colorTextNav
