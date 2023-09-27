@@ -37,14 +37,14 @@ header{
     color: $colorTextNav;
     padding: 5px;
   }
+
   a:hover{
-    a:hover{
-      background-color: $hoverA;
-      border-radius: 5px;
-      padding: 5px;
-      color: $colorTextNav;
-    }
+    background-color: $hoverA;
+    border-radius: 5px;
+    padding: 5px;
+    color: $colorTextNav;
   }
+  
   img{
     height: 130px
   }
@@ -80,8 +80,22 @@ form{
   font-size:1rem;
 }
 .table{
-  tr{color: #cdc4c8;}
-  td {color: #cdc4c8;}
+  border-collapse: collapse !important;
+  thead{
+    font-size: 20px;
+    background-color: rgb(19, 19, 19,0.70);
+  }
+  tr{
+    color: #cdc4c8;
+  }
+  
+  tr :hover{
+    background-color: #06030a;
+  }
+  // #06030a
+  td {
+    color: #cdc4c8;
+  }
 }
 
 .container-advertising{

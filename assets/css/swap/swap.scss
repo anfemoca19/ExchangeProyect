@@ -39,13 +39,12 @@ header{
     color: $colorTextNav;
     padding: 5px;
   }
+
   a:hover{
-    a:hover{
-      background-color: $hoverA;
-      border-radius: 5px;
-      padding: 5px;
-      color: $colorTextNav;
-    }
+    background-color: $hoverA;
+    border-radius: 5px;
+    padding: 5px;
+    color: $colorTextNav;
   }
   img{
     height: 130px
