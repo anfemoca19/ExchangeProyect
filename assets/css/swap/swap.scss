@@ -263,7 +263,6 @@ header{
                           transition: background-color 250ms ease-in 0s;
                           box-shadow: white 0px 0px 1px;
                           border-radius: 50%;
-
                           .icon-coin{
                             opacity: 1;
                             transition: opacity 250ms ease-in 0s;
@@ -292,7 +291,7 @@ header{
                   color: rgb(255, 255, 255);
                   cursor: pointer;
                   height: unset;
-                  border-radius: 16px;
+                  border-radius: 5px;
                   outline: none;
                   user-select: none;
                   border: 1px solid rgb(252, 114, 255);
@@ -511,7 +510,7 @@ header{
                   color: rgb(255, 255, 255);
                   cursor: pointer;
                   height: unset;
-                  border-radius: 16px;
+                  border-radius: 5px;
                   outline: none;
                   user-select: none;
                   border: 1px solid rgb(252, 114, 255);
@@ -596,7 +595,7 @@ header{
           line-height: 24px;
           font-weight: 535;
           text-align: center;
-          border-radius: 16px;
+          border-radius: 5px;
           outline: none;
           border: 1px solid transparent;
           color: rgb(255, 255, 255);

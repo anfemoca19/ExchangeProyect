@@ -202,6 +202,11 @@ main{
       padding: 24px calc(28px) 24px 14px;
       border-radius: 20px 0px 0px 20px;
       transition: background-color 250ms ease 0s, margin 250ms ease 0s;
+      :hover{
+        background-color:#532c59;
+        border-radius: 5px;
+        color: $colorTextNav;
+      }
 
       .svg-style{
         stroke: rgb(125, 125, 125);
@@ -222,8 +227,7 @@ main{
       flex-flow: column;
       padding: 14px 16px 16px;
       color: black;
-
-      .contaner-title-wallet{
+      .container-wallet{
         width: 100%;
         display: flex;
         padding: 0px;
@@ -232,14 +236,17 @@ main{
         box-sizing: border-box;
         margin: 0px 0px 16px;
         min-width: 0px;
-        .tittle{
+      
+
+        .tittle-modal{
           box-sizing: border-box;
           margin: 0px;
           min-width: 0px;
           font-weight: 485;
-          font-size: 16px;
+          font-size: 23px;
           line-height: 24px;
         }
+
         .btn-tools{
           background-color: rgb(255, 255, 255);
           transition: width 125ms ease-in-out 0s;
@@ -253,7 +260,8 @@ main{
           width: 32px;
           color: rgb(125, 125, 125);
           border: none;
-          outline: none;
+          outline: none;         
+
           .tittle-tools{
               width: 24px;
               height: 24px;
@@ -262,8 +270,7 @@ main{
               align-items: center;
               justify-content: center;
           }
-
-      }
+        }
       }
     
     .container-body-modal{
@@ -277,6 +284,8 @@ main{
         border-radius: 12px;
         overflow: hidden;
 
+
+
         .container-wallets{
           border-radius: 10px;
           align-items: stretch;
@@ -286,7 +295,7 @@ main{
           position: relative;
           width: 100%;
           background-color: rgb(249, 249, 249);
-
+          
           .btn-wallet{
             -webkit-box-align: center;
             align-items: center;
@@ -302,6 +311,7 @@ main{
             opacity: 1;
             padding: 18px;
             transition: all 125ms ease 0s;
+
 
             .logo-metamask{
               height: 40px;

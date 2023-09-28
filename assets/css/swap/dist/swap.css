@@ -280,7 +280,7 @@ header .connect-wallet .icon-user {
   color: white;
   cursor: pointer;
   height: unset;
-  border-radius: 16px;
+  border-radius: 5px;
   outline: none;
   user-select: none;
   border: 1px solid #fc72ff;
@@ -494,7 +494,7 @@ header .connect-wallet .icon-user {
   color: white;
   cursor: pointer;
   height: unset;
-  border-radius: 16px;
+  border-radius: 5px;
   outline: none;
   user-select: none;
   border: 1px solid #fc72ff;
@@ -572,7 +572,7 @@ header .connect-wallet .icon-user {
   line-height: 24px;
   font-weight: 535;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 5px;
   outline: none;
   border: 1px solid transparent;
   color: white;
