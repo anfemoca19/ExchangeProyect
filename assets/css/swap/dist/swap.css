@@ -212,7 +212,7 @@ header .connect-wallet .icon-user {
   color: white;
   cursor: pointer;
   height: unset;
-  border-radius: 16px;
+  border-radius: 5px;
   outline: none;
   user-select: none;
   border: 1px solid rgba(255, 255, 255, 0.07);

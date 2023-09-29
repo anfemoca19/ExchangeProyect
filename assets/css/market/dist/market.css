@@ -86,9 +86,6 @@ form .btn-search :focus {
 .table tr {
   color: #cdc4c8;
 }
-.table tr :hover {
-  background-color: #06030a;
-}
 .table td {
   color: #cdc4c8;
 }

@@ -25,11 +25,24 @@ function filtrarYMostrarDatos(data, filtro) {
 
   var cryptoTableBody = document.getElementById('cryptoTableBody'); // Limpiar la tabla
 
-  cryptoTableBody.innerHTML = ''; // Agregar las criptomonedas filtradas a la tabla
+  cryptoTableBody.innerHTML = ''; // // Agregar las criptomonedas filtradas a la tabla
+  // criptomonedasFiltradas.forEach(crypto => {
+  //   const row = document.createElement('tr');
+  //   row.innerHTML = `
+  //   <td>${crypto.cmc_rank}</td>
+  //   <td>${crypto.name}</td>
+  //   <td>${crypto.symbol}</td>
+  //   <td>${crypto.quote.USD.price.toFixed(2)}</td>
+  //   <td>${crypto.circulating_supply.toLocaleString()}</td>
+  //   `;
+  //   cryptoTableBody.appendChild(row);
+  // });
+  // Mostrar solo los primeros 50 datos
 
-  criptomonedasFiltradas.forEach(function (crypto) {
+  var numDatosAMostrar = 50;
+  criptomonedasFiltradas.slice(0, numDatosAMostrar).forEach(function (crypto) {
     var row = document.createElement('tr');
-    row.innerHTML = "\n    <td>".concat(crypto.cmc_rank, "</td>\n    <td>").concat(crypto.name, "</td>\n    <td>").concat(crypto.symbol, "</td>\n    <td>").concat(crypto.quote.USD.price.toFixed(2), "</td>\n    <td>").concat(crypto.circulating_supply.toLocaleString(), "</td>\n    ");
+    row.innerHTML = "\n        <td>".concat(crypto.cmc_rank, "</td>\n        <td>").concat(crypto.name, "</td>\n        <td>").concat(crypto.symbol, "</td>\n        <td>").concat(crypto.quote.USD.price.toFixed(2), "</td>\n        <td>").concat(crypto.circulating_supply.toLocaleString(), "</td>\n      ");
     cryptoTableBody.appendChild(row);
   });
 } // Obtener el input de búsqueda

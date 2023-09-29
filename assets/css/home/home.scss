@@ -67,6 +67,12 @@ header {
 
 
 main{
+  .carousel-control-prev-icon{
+    color: red !important;
+  }
+
+
+
   .nftHome{
     width: $sizeNftWidth;
     height: $sizeNftheith;
@@ -161,10 +167,13 @@ main{
     -webkit-box-align: center;
     align-items: center;
     transition: opacity 250ms ease 0s;
+    :hover{
+      background-color: #532c59;
+    }
 
     .btn-learmore{
       color: black;
-      border: 1px solid white;
+      border: 1px solid #cdc4c8;
       background-color: #cdc4c8;
       text-decoration: none;
       padding: 16px;
@@ -175,10 +184,6 @@ main{
       cursor: pointer;
       transition: transform 450ms ease 0s;
       transform: perspective(1px) translateZ(0px);
-      :hover{
-        background-color: #532c59;
-      }
-      
     }
   }
 

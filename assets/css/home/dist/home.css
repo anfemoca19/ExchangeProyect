@@ -52,6 +52,9 @@ header .connect-wallet .icon-user {
   width: 25px;
 }
 
+main .carousel-control-prev-icon {
+  color: red !important;
+}
 main .nftHome {
   width: 500px;
   height: 500px;
@@ -157,9 +160,12 @@ main .container-protocol .container-learMore {
   align-items: center;
   transition: opacity 250ms ease 0s;
 }
+main .container-protocol .container-learMore :hover {
+  background-color: #532c59;
+}
 main .container-protocol .container-learMore .btn-learmore {
   color: black;
-  border: 1px solid white;
+  border: 1px solid #cdc4c8;
   background-color: #cdc4c8;
   text-decoration: none;
   padding: 16px;
@@ -170,9 +176,6 @@ main .container-protocol .container-learMore .btn-learmore {
   cursor: pointer;
   transition: transform 450ms ease 0s;
   transform: perspective(1px) translateZ(0px);
-}
-main .container-protocol .container-learMore .btn-learmore :hover {
-  background-color: #532c59;
 }
 main .select-modal {
   display: none;
