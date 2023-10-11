@@ -4,7 +4,6 @@ body {
   background: $colorBody;
   /* (#482b41, #06030a); */
   color: $colorTextNav;
-  // font-family: 'Playfair Display', serif, Archivo;
 }
 @mixin button{
   background: $gradientButton;
@@ -30,7 +29,7 @@ header{
     align-items: center;
     gap: 20px;
     font-size: $fontSizeNav;
-    font-family: "Victor Mono", monospace;
+    font-weight:700;
   }
   a{
     text-decoration: none;
@@ -134,6 +133,9 @@ footer{
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     color: $colorTextNav;
+    :hover{
+      color: #a536b6;
+    }
     a{
       text-decoration: none;
       color:$colorTextNav
